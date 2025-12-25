@@ -1,0 +1,6 @@
+hello1: c1.o
+	gcc -o hello1 c1.o
+c1.o: c1.c
+	gcc -c c1.c
+clean:
+	rm -rf *.o
